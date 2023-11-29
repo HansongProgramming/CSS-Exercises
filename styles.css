@@ -3,8 +3,20 @@
 }
 
 .left,.middle,.right{
-    width: 20%;
-    height: 20%;
-    background-color: #0094FF;
+    width: 50px;
+    height: 50px;
     border: 3px solid  white;
+    margin: 20px;
+}
+
+.left{
+    background-color: rgb(197, 91, 91);
+}
+
+.middle{
+    background-color: rgb(63, 168, 63);
+}
+
+.right{
+    background-color: rgb(59, 91, 179);
 }
