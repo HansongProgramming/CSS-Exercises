@@ -1,5 +1,8 @@
-.gradient{
+body{
     background: linear-gradient(-65deg, #ff9d9d 30%, #0094FF 100%);
+    width: 800px;
+    margin-left: 30%;
+    margin-top: 20%;
 }
 
 .left,.middle,.right{
@@ -11,12 +14,40 @@
 
 .left{
     background-color: rgb(197, 91, 91);
+    animation: spin 2s infinite;
+
 }
 
 .middle{
     background-color: rgb(63, 168, 63);
+    animation: spin 2s infinite;
+
 }
 
 .right{
     background-color: rgb(59, 91, 179);
+    animation: spin 2s infinite;
+
+}
+
+.Cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation: spin 4s infinite;
+}
+
+@keyframes spin {
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 500px){
+    body{
+        background: linear-gradient(-65deg, #ff9d9d 30%, #0094FF 100%);
+        width: 800px;
+        margin-left: 15%;
+        margin-top: 100%;
+    }
 }
