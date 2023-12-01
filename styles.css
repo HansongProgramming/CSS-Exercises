@@ -1,8 +1,8 @@
 body{
-    background: linear-gradient(-65deg, #ff9d9d 30%, #0094FF 100%);
-    width: 800px;
-    margin-left: 30%;
-    margin-top: 20%;
+    margin: 0 auto;
+    margin-top: 25%;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .left,.middle,.right{
@@ -43,11 +43,14 @@ body{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 740px){
+    .left,.middle,.right{
+        width: 30px;
+        height: 30px;
+        border: 3px solid  white;
+    }
     body{
-        background: linear-gradient(-65deg, #ff9d9d 30%, #0094FF 100%);
-        width: 800px;
-        margin-left: 15%;
+        margin: 0 auto;
         margin-top: 100%;
     }
 }
