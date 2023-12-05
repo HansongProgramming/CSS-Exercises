@@ -1,10 +1,13 @@
 body{
     margin: 0 auto;
-    margin-top: 25%;
+    margin-top: 5%;
     overflow-y: hidden;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 6580px;
 }
-
+/* FLEXBOX LAYOUT */
 .left,.middle,.right{
     width: 50px;
     height: 50px;
@@ -32,6 +35,7 @@ body{
     animation: spin 4s infinite;
 }
 
+/* FLOAT LAYOUT */
 .floater1, .floater2, .floater3{
     background-color: black;
     height: 50px;
@@ -41,8 +45,8 @@ body{
     animation: sliders 4s infinite;
 }
 .float{
-    position: absolute;
-    left: 45%;
+    /* position: absolute;
+    left: 45%; */
 }
 
 h1{
@@ -51,6 +55,7 @@ h1{
     font-family: cursive;
 }
 
+/* GRID */
 .Grid {
     margin-left: 45%;
     display: grid;
@@ -83,8 +88,8 @@ h1{
     padding: 10px;
     height: 200px;
     width: 500px;
-    position: absolute;
-    left: 37%;
+    /* position: absolute;
+    left: 37%; */
 }
   
   .grid-container > div {
@@ -93,15 +98,25 @@ h1{
     padding: 2px 0;
     font-size: 16px;
   }
+
+  /* CARD */
     .cardItem{
         height: 380px;
         width: 200px;
-        background-color: rgba(174, 177, 182, 0.1);
+        background-color: white;
+        padding: 5px;
+        box-shadow: 5px 5px 10px #888888;
+    }
+    .cardItem:hover{
+        transform: scale(1.1,1.1) rotate(5deg);
+        transition: 0.5s;
+        color: red;
     }
     .card{
-        position: absolute;
-        left: 45%;
-        box-shadow: 5px 5px 10px #888888;
+        /* position: absolute; */
+        display: flex;
+        flex-direction: row;
+        /* left: 39%; */
     }
     h3{
         color: rgb(235, 82, 12);
@@ -116,6 +131,8 @@ h1{
         width: 180px;
         height: 240px;
     }
+
+/* ANIMATION */
 @keyframes spin {
     50%{
         transform: rotate(360deg);
@@ -140,16 +157,9 @@ h1{
         background-color: pink;
     }
 }
-@media (max-width: 740px){
-    .left,.middle,.right{
-        width: 30px;
-        height: 30px;
-        border: 3px solid  white;
-        
-    }
-    body{
-        margin: 0 auto;
-        margin-top: 100%;
-    }
+
+/* MEDIA QUERIES */
+@media (max-width: 5000px){
+    
 }
 
